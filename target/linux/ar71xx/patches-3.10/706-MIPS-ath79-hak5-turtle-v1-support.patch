@@ -4,7 +4,7 @@
  	ATH79_MACH_EW_DORIN,		/* embedded wireless Dorin Platform */
  	ATH79_MACH_EW_DORIN_ROUTER,	/* embedded wireless Dorin Router Platform */
  	ATH79_MACH_EAP7660D,		/* Senao EAP7660D */
-+	ATH79_MACH_GS_OOLITE,           /* GS OOLITE V1.0 */
++	ATH79_MACH_HAK5_TURTLE,         /* HAK5 TURTLE V1.0 */
  	ATH79_MACH_JA76PF,		/* jjPlus JA76PF */
  	ATH79_MACH_JA76PF2,		/* jjPlus JA76PF2 */
  	ATH79_MACH_JWAP003,		/* jjPlus JWAP003 */
@@ -14,8 +14,8 @@
  	  Say 'Y' here if you want your kernel to support the
  	  Dorin Platform from www.80211.de .
  
-+config ATH79_MACH_GS_OOLITE
-+       bool "GS Oolite V1 support"
++config ATH79_MACH_HAK5_TURTLE
++       bool "HAK5 TURTLE V1 Support"
 +       select SOC_AR933X
 +       select ARH79_DEV_ETH
 +       select ARH79_DEV_GPIO_BUTTONS
@@ -33,7 +33,7 @@
  obj-$(CONFIG_ATH79_MACH_DRAGINO2)	+= mach-dragino2.o
  obj-$(CONFIG_ATH79_MACH_EW_DORIN)	+= mach-ew-dorin.o
  obj-$(CONFIG_ATH79_MACH_EAP7660D)	+= mach-eap7660d.o
-+obj-$(CONFIG_ATH79_MACH_GS_OOLITE)	+= mach-gs-oolite.o
++obj-$(CONFIG_ATH79_MACH_HAK5_TURTLE)	+= mach-turtle.o
  obj-$(CONFIG_ATH79_MACH_JA76PF)		+= mach-ja76pf.o
  obj-$(CONFIG_ATH79_MACH_JWAP003)	+= mach-jwap003.o
  obj-$(CONFIG_ATH79_MACH_HORNET_UB)	+= mach-hornet-ub.o

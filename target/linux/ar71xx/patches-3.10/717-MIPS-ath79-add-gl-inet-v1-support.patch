@@ -14,8 +14,8 @@
 +	select ATH79_DEV_USB
 +	select ATH79_DEV_WMAC
 +
- config ATH79_MACH_GS_OOLITE
-        bool "GS Oolite V1 support"
+ config ATH79_MACH_HAK5_TURTLE
+        bool "HAK5 TURTLE V1 Support"
         select SOC_AR933X
 --- a/arch/mips/ath79/machtypes.h
 +++ b/arch/mips/ath79/machtypes.h
@@ -24,7 +24,7 @@
  	ATH79_MACH_EL_M150,		/* EasyLink EL-M150 */
  	ATH79_MACH_EL_MINI,		/* EasyLink EL-MINI */
 +	ATH79_MACH_GL_INET,		/* GL-CONNECT GL-INET */
- 	ATH79_MACH_GS_OOLITE,           /* GS OOLITE V1.0 */
+ 	ATH79_MACH_HAK5_TURTLE,         /* HAK5 TURTLE V1.0 */
  	ATH79_MACH_HIWIFI_HC6361,	/* HiWiFi HC6361 */
  	ATH79_MACH_JA76PF,		/* jjPlus JA76PF */
 --- a/arch/mips/ath79/Makefile
@@ -34,6 +34,6 @@
  obj-$(CONFIG_ATH79_MACH_EL_M150)	+= mach-el-m150.o
  obj-$(CONFIG_ATH79_MACH_EL_MINI)	+= mach-el-mini.o
 +obj-$(CONFIG_ATH79_MACH_GL_INET)	+= mach-gl-inet.o
- obj-$(CONFIG_ATH79_MACH_GS_OOLITE)	+= mach-gs-oolite.o
+ obj-$(CONFIG_ATH79_MACH_HAK5_TURTLE)	+= mach-turtle.o
  obj-$(CONFIG_ATH79_MACH_HIWIFI_HC6361)	+= mach-hiwifi-hc6361.o
  obj-$(CONFIG_ATH79_MACH_JA76PF)		+= mach-ja76pf.o

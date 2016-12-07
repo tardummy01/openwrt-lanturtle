@@ -166,6 +166,9 @@ get_status_led() {
 	smart-300)
 		status_led="nc-link:green:system"
 		;;
+	turtle)
+		status_led="turtle:yellow:system"
+		;;
 	oolite)
 		status_led="oolite:red:system"
 		;;

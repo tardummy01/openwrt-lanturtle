@@ -23,8 +23,8 @@
 +	select ATH79_DEV_M25P80
 +	select ATH79_DEV_WMAC
 +
- config ATH79_MACH_GS_OOLITE
-        bool "GS Oolite V1 support"
+ config ATH79_MACH_HAK5_TURTLE
+        bool "HAK5 TURTLE V1 Support"
         select SOC_AR933X
 --- a/arch/mips/ath79/Makefile
 +++ b/arch/mips/ath79/Makefile

@@ -142,6 +142,10 @@ hornet-ub)
 	ucidef_set_led_usbdev "usb" "USB" "alfa:blue:usb" "1-1"
 	;;
 
+turtle)
+	ucidef_set_led_netdev "wan" "WAN" "turtle:yellow:system" "eth1"
+	;;
+
 mr600)
 	ucidef_set_led_wlan "wlan58" "WLAN58" "mr600:green:wlan58" "phy0tpt"
 	;;

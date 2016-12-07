@@ -91,6 +91,9 @@ tplink_board_detect() {
 	hwver="v${hwver#0}"
 
 	case "$hwid" in
+	"534833"*)
+		model="TURTLE"
+		;;
 	"015000"*)
 		model="EasyLink EL-M150"
 		;;
@@ -229,6 +232,9 @@ ar71xx_board_detect() {
 	machine=$(awk 'BEGIN{FS="[ \t]+:[ \t]"} /machine/ {print $2}' /proc/cpuinfo)
 
 	case "$machine" in
+	*"Turtle V1.0")
+                name="turtle"
+                ;;
 	*"Oolite V1.0")
 		name="oolite"
 		;;

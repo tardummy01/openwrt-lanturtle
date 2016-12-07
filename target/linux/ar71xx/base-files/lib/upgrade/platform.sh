@@ -252,6 +252,7 @@ platform_check_image() {
 		return 1
 		;;
 
+	turtle | \
 	archer-c5 | \
 	archer-c7 | \
 	el-m150 | \
